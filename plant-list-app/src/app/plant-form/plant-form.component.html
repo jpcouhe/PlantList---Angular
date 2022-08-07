@@ -1,0 +1,27 @@
+<form [formGroup]="plantForm" (ngSubmit)="onSubmit()">
+    <label >
+        Name
+        <input type="text" formControlName="name">
+    </label>
+    <label >
+        Type
+        <input type="text" formControlName="type">
+    </label>
+    <label >
+        Date d'achat
+        <input type="text" formControlName="purchase">
+    </label>
+    <label >
+        Exposition
+        <input type="text" formControlName="exposition">
+    </label>
+    <label >
+        Fréquence d'arrosage
+        <input type="text" formControlName="watering">
+    </label>
+    <label >
+        Prix
+        <input type="number" formControlName="price">
+    </label>
+    <button type="submit">Submit</button>
+</form>
