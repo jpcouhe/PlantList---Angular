@@ -8,7 +8,7 @@
 <img src="construction.png" alt="drawing" height="250"/>
 </p>
 
-Création d'un site pour tenir à jour sa liste de plante (Type, fréquence d'arrosage, date d'achat, Prix)
+Création de fonctionnalité d'un site pour tenir à jour sa liste de plante (Type, fréquence d'arrosage, date d'achat, Prix)
 
 ## 🎯 Fonctionnalités
   - 
