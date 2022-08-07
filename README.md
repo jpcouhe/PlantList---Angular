@@ -5,6 +5,7 @@
 # PlantList | Gestion de ses plantes 
 
 <p align="center">
+<img src="construction.png" alt="drawing" height="250"/>
 </p>
 
 Création d'un site pour tenir à jour sa liste de plante (Type, fréquence d'arrosage, date d'achat, Prix)
