@@ -19,4 +19,7 @@ export class AppComponent implements OnInit{
   }
 
 
+  deletePlant(plant : Plant){
+    this.plantService.deletePlant(plant)
+  }
 }

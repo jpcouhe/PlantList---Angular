@@ -1,8 +1,10 @@
-<div *ngIf='plant'>
-    <h2>{{plant.name}}</h2>
-    <p>Exposition : {{plant.exposition}} </p>
-    <p>Type : {{plant.type}} </p>
-    <p>Prix : {{plant.price}} </p>
-    <p>Date d'achat : {{plant.purchase}} </p>
-    <p>Fréquence d'arrosage : {{plant.watering}} </p>
+<div class="plant-card" *ngIf="plant">
+  <img [src]="plant.imageUrl" alt="plant" />
+  <h2>{{ plant.name }}</h2>
+  <p>Exposition : {{ plant.exposition }}</p>
+  <p>Type : {{ plant.type }}</p>
+  <p>Prix : {{ plant.price }}</p>
+  <p>Date d'achat : {{ plant.purchase }}</p>
+  <p>Fréquence d'arrosage : {{ plant.watering }}</p>
+  <button (click)="onDeletePlant(plant)">Supprimer</button>
 </div>

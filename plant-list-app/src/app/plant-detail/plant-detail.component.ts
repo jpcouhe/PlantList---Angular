@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Plant } from '../plant.model';
 
 @Component({
@@ -9,9 +9,15 @@ import { Plant } from '../plant.model';
 export class PlantDetailComponent implements OnInit {
 
   @Input() plant : Plant | undefined
+  @Output() deletePlant = new EventEmitter<Plant>()
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onDeletePlant(plant: Plant){
+    this.deletePlant.emit(plant)
   }
 
 }
