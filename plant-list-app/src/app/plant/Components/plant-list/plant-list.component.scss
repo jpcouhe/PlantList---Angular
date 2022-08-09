@@ -1,0 +1,28 @@
+.plant-card-container{
+    display: flex;
+}
+
+
+.container{
+    padding: 0 60px;
+    margin: 20px 0px;
+    width: 100%;
+    
+    h2{
+        font-size: 40px;
+        color: #10403b;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom:20px;
+
+        &::before{
+            content: '';
+            width: 150px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border: 2px solid #10403b;
+        }
+    }
+}
+

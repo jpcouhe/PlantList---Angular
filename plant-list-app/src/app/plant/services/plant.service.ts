@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Plant } from './plant.model';
+import { Plant } from '../models/plant.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,19 +11,19 @@ export class PlantService {
       name: 'Schefflera arboricola',
       type: 'interieur',
       purchase: '2 aout',
-      exposition: 'lumière vive',
-      watering: '1 fois /semaine',
-      price: 80,
+      exposition: 'soleil',
+      watering: '2 fois /semaine',
+      price: 120,
       imageUrl:
         'https://images.truffaut.com/media/catalog/productcdn:///Articles/jpg/0482000/482813_002.jpg?width=700&height=700&store=fr&image-type=image',
     },
     {
       name: 'Cactus',
-      type: 'interieur',
+      type: 'Exterieur',
       purchase: '2 aout',
-      exposition: 'lumière vive',
+      exposition: 'mi-ombre',
       watering: '1 fois /semaine',
-      price: 80,
+      price: 30,
       imageUrl:
         'https://images.truffaut.com/media/catalog/productcdn:///Articles/jpg/0349000/349053_003.jpg?store=fr&image-type=image',
     },

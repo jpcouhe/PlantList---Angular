@@ -1,12 +1,7 @@
+
 <app-header></app-header>
+
 <div class="container">
-  <app-plant-form></app-plant-form>
-  <div class="plant-card-container">
-    <app-plant-detail
-      class="plant-card"
-      *ngFor="let plant of plantList$ | async"
-      [plant]="plant"
-      (deletePlant)="deletePlant($event)"
-    ></app-plant-detail>
-  </div>
+  <router-outlet></router-outlet>
 </div>
+

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Plant } from './plant.model';
-import { PlantService } from './plant.service';
+import { PlantService } from './plant/services/plant.service';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +8,11 @@ import { PlantService } from './plant.service';
 })
 export class AppComponent implements OnInit{
   
-  plantList$: Observable<Plant[]> | undefined
 
-  constructor(private plantService : PlantService){}
+
+  constructor(){}
 
   ngOnInit(): void {
-    this.plantList$ = this.plantService.plantList$
-  }
-
-
-  deletePlant(plant : Plant){
-    this.plantService.deletePlant(plant)
+   
   }
 }

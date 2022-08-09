@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Plant } from '../plant.model';
+import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, Renderer2 } from '@angular/core';
+import { Plant } from '../../models/plant.model';
 
 @Component({
   selector: 'app-plant-detail',
@@ -11,6 +11,8 @@ export class PlantDetailComponent implements OnInit {
   @Input() plant : Plant | undefined
   @Output() deletePlant = new EventEmitter<Plant>()
   
+  showButton:boolean = false
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,4 +22,10 @@ export class PlantDetailComponent implements OnInit {
     this.deletePlant.emit(plant)
   }
 
+  @HostListener('mouseenter') onMouseEnter(){
+    this.showButton = true
+  }
+  @HostListener('mouseleave') onMouseLeave(){
+    this.showButton = false
+  }
 }

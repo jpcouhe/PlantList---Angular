@@ -1,0 +1,9 @@
+<p *ngIf="plant === undefined ">Aucune Plante Trouvée !</p>
+<div *ngIf="plant">
+    
+    <p> Plante Trouvée</p>    
+    
+    <app-plant-detail [plant]="plant"></app-plant-detail>
+    <button><a routerLink="/plants">Retour</a></button>
+
+</div>

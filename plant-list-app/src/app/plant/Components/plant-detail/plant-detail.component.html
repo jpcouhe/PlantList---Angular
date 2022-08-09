@@ -1,0 +1,18 @@
+<div class="plant-card" *ngIf="plant">
+  <div>
+    <img [src]="plant.imageUrl" alt="plant" />
+  </div>
+  <div class="plant-card__info">
+    <h2>{{ plant.name }}</h2>
+    <p>Exposition : {{ plant.exposition | plantExposition }}</p>
+    <p>Fréquence d'arrosage : {{ plant.watering }}</p>
+    <p>Date d'achat : {{ plant.purchase }}</p>
+    <p>Prix : {{ plant.price }} €</p>
+    <p>
+      <span class="{{ plant.type | plantTypeColor }}"> {{ plant.type }}</span>
+    </p>
+  </div>
+  <button class="btn-delete" *ngIf="showButton" (click)="onDeletePlant(plant)">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>

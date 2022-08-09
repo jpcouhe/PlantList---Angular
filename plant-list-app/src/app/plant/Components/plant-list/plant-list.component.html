@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Mes Plantes</h2>
+  <div class="plant-card-container">
+    <app-plant-detail
+      class="plant-card"
+      *ngFor="let plant of plantList$ | async; let indexOfelement = index"
+      [plant]="plant"
+      (deletePlant)="deletePlant($event)"
+      (click)="goToPlant(indexOfelement)"
+    ></app-plant-detail>
+  </div>
+</div>

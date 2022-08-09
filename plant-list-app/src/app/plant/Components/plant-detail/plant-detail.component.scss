@@ -1,0 +1,70 @@
+.plant-card {
+  margin: 10px;
+  width: 300px;
+  height: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      color: #10403b;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #8AA6A3;
+      margin: 5px 0;
+      &:last-child {
+
+        span{
+          padding: 10px;
+          border-radius: 50px;
+        }
+        margin-top: 10px;
+        display: inline-flex;
+        align-self: center;
+      }
+    }
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+
+.btn-delete{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 100%;
+  background-color: #8AA6A3;
+  border: none;
+  padding: 5px;
+  // color: #10403B;
+
+  mat-icon{
+    color: #10403B;
+  }
+}
+
+
+
+
+// Couleurs pour le Pipe Intérieur/Extérieur
+
+.lighten-1 {
+  background-color: #10403b;
+  color: white;
+}
+
+.darken-1 {
+  color: white;
+  background-color: #8aa6a3;
+}
