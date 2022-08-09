@@ -32,6 +32,7 @@ Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence
 ## 🚀 Optimisations supplémentaires envisageables  
   - Gestion Utilisateur
   - Mise en Place d'une base de donnée externe via un service de type Firebase 
+  - Upload de ses images
   - Modification des Plantes
   - Mise en place du menu Burger 
   
