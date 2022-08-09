@@ -10,6 +10,13 @@
 
 Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence d'arrosage, date d'achat, Prix)
 
+
+## 🔨 Technologies 
+
+* Frontend 
+    - Framework **Angular**
+    - **SCSS**
+
 ## 🎯 Fonctionnalités
   - Récupération d'une Liste de plante (Pour le moment écrit en dur dans l'application) 
   - Création d'une nouvelle plante
