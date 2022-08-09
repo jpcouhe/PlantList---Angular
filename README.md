@@ -21,6 +21,8 @@ Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence
   - Récupération d'une Liste de plante (Pour le moment écrit en dur dans l'application) 
   - Création d'une nouvelle plante
   - Mise à jour de la liste 
+  
+  <a href='https://www.youtube.com/watch?v=c4FoYfU7N2c'><img src='plant-list-app/docs/youtube.png' height="50" width='auto'></br>
 
 ## 🏗️ Concepts utilisés
   - Programmation Réactive d'Angular (Observable et libraire RxJs)
