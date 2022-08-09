@@ -41,6 +41,11 @@ header {
       color: #10403b;
       font-weight: 500;
 
+      @media screen and (max-width:800px) {
+        font-size: 16px;
+        margin: 0 10px;
+        
+      }
       &:hover {
         color: #8aa6a3;
       }
@@ -55,14 +60,39 @@ header {
   align-items: center;
   justify-content: center;
   padding: 30px 60px;
-//   margin: 20px 0px;
   width: 100%;
 
+
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+    padding: 30px 40px;
+  }
+
+
   &__texte {
+    max-width: 700px;
+    // width: 700px;
+
+    @media screen and (max-width:768px) {
+      margin-bottom: 60px;
+    }
     h1 {
       font-size: 60px;
       color: #127369;
 
+      
+  @media screen and (max-width:1024px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width:768px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width:500px) {
+    width: 100%;
+    
+  }
       span {
         font-size: 80px;
         text-transform: uppercase;
@@ -72,6 +102,14 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+
+        @media screen and (max-width:1024px) {
+          font-size: 60px;
+
+          @media screen and (max-width:768) {
+            font-size: 40px;
+          }
+        }
       }
     }
 
@@ -79,6 +117,21 @@ header {
       font-size: 30px;
       color: #8aa6a3;
       line-height: 40px;
+
+      @media screen and (max-width:1024px) {
+        font-size: 20px;
+
+        
+      }
+
+      @media screen and (max-width:768) {
+        font-size: 16px;
+      }
+
+      @media screen and (max-width:500) {
+      display: inline-block;
+        
+      }
     }
 
     button{
@@ -98,5 +151,28 @@ header {
         
       }
     }
+  }
+
+  &__image{
+    img{
+
+      width: 100%;
+    }
+  }
+}
+
+nav{
+  @media screen and (max-width:600px) {
+    display: none;
+    
+  }
+}
+
+mat-icon{
+  display: none;
+
+  @media screen and (max-width:600px) {
+    display: block;
+    
   }
 }

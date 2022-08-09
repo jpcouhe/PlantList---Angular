@@ -6,6 +6,15 @@ form {
     margin: 0 auto;
     margin-top: -20px;
 
+    @media screen and (max-width:768px) {
+  
+    padding: 0 40px;
+ 
+    width: 100%;
+     }
+    
+
+
     h2{
         margin-bottom: 10px;
         text-align: center;
