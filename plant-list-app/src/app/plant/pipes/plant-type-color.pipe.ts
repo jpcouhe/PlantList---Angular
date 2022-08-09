@@ -10,10 +10,10 @@ export class PlantTypeColorPipe implements PipeTransform {
     let color: string;
   
     switch (type) {
-      case 'interieur':
+      case 'Intérieur':
         color = 'lighten-1';
         break;
-      case 'Exterieur':
+      case 'Extérieur':
         color = 'darken-1';
         break;
       default:

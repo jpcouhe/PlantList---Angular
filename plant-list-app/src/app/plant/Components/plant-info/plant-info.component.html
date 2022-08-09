@@ -1,9 +1,22 @@
-<p *ngIf="plant === undefined ">Aucune Plante Trouvée !</p>
-<div *ngIf="plant">
-    
-    <p> Plante Trouvée</p>    
-    
-    <app-plant-detail [plant]="plant"></app-plant-detail>
-    <button><a routerLink="/plants">Retour</a></button>
-
+<p *ngIf="plant === undefined">Aucune Plante Trouvée !</p>
+<div class="container" *ngIf="plant">
+  <h2>{{ plant.name }}</h2>
+  <div class="plant-info">
+    <div class="plant-info__image">
+      <img [src]="plant.imageUrl" alt="plant" />
+    </div>
+    <div class="plant-info__texte">
+      <p><span>Exposition :</span> {{ plant.exposition | plantExposition }}</p>
+      <p><span>Fréquence d'arrosage :</span> {{ plant.watering }}</p>
+      <p><span>Date d'achat :</span> {{ plant.purchase | date: 'dd/MM/yyyy' }}</p>
+      <p><span>Prix :</span> {{ plant.price }} €</p>
+      <p>
+        <span class="{{ plant.type | plantTypeColor }}"> {{ plant.type }}</span>
+      </p>
+      <div class="interaction">
+          <button><a routerLink="">Modifier</a></button>
+          <button><a routerLink="/plants">Retour</a></button>
+    </div>
+    </div>
+  </div>
 </div>

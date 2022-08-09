@@ -9,8 +9,8 @@ export class PlantService {
   private defaultPlantList: Plant[] = [
     {
       name: 'Schefflera arboricola',
-      type: 'interieur',
-      purchase: '2 aout',
+      type: 'Intérieur',
+      purchase: '08/09/2022',
       exposition: 'soleil',
       watering: '2 fois /semaine',
       price: 120,
@@ -19,13 +19,23 @@ export class PlantService {
     },
     {
       name: 'Cactus',
-      type: 'Exterieur',
-      purchase: '2 aout',
+      type: 'Extérieur',
+      purchase: '08/02/2022',
       exposition: 'mi-ombre',
       watering: '1 fois /semaine',
       price: 30,
       imageUrl:
         'https://images.truffaut.com/media/catalog/productcdn:///Articles/jpg/0349000/349053_003.jpg?store=fr&image-type=image',
+    },
+    {
+      name: 'Dionée attrape-mouche',
+      type: 'Extérieur',
+      purchase: '08/09/2022',
+      exposition: 'mi-ombre',
+      watering: '1 fois /jour',
+      price: 10,
+      imageUrl:
+        'https://media.gerbeaud.net/2021/01/640/dionee-tourbiere.jpg',
     },
   ];
 

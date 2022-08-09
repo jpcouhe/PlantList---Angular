@@ -1,31 +1,79 @@
-<form [formGroup]="plantForm" (ngSubmit)="onSubmit()">
-    <label >
-        Name
-        <input type="text" formControlName="name">
-    </label>
-    <label >
-        Image
-        <input type="text" formControlName="imageUrl">
-    </label>
-    <label >
-        Type
-        <input type="text" formControlName="type">
-    </label>
-    <label >
-        Date d'achat
-        <input type="text" formControlName="purchase">
-    </label>
-    <label >
-        Exposition
-        <input type="text" formControlName="exposition">
-    </label>
-    <label >
-        Fréquence d'arrosage
-        <input type="text" formControlName="watering">
-    </label>
-    <label >
-        Prix
-        <input type="number" formControlName="price">
-    </label>
-    <button type="submit">Submit</button>
+<!-- <div class="container">
+  <h2>Ajouter une Plante</h2>
+  <form [formGroup]="plantForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="name" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Image</mat-label>
+      <input matInput formControlName="imageUrl" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Type</mat-label>
+      <input matInput formControlName="type" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Date d'achat</mat-label>
+      <input matInput formControlName="purchase" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Exposition</mat-label>
+      <input matInput formControlName="exposition" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Fréquence d'arrosage</mat-label>
+      <input matInput formControlName="watering" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Prix</mat-label>
+      <input matInput formControlName="price" />
+    </mat-form-field>
+    <button type="submit">Créer</button>
+  </form>
+</div> -->
+
+<form class="bloc-form" [formGroup]="plantForm" (ngSubmit)="onSubmit()">
+  <h2>Ajouter une Plante</h2>
+  <label for="name">Nom</label>
+  <input type="text" formControlName="name" placeholder="Dionée attrape-mouche"/>
+
+  <label for="imageUrl">Image</label>
+  <input type="text" formControlName="imageUrl" placeholder="http://www.google.com/dionée.jpg" />
+
+  <label for="type">Type</label>
+  <select name="check" formControlName="type">
+    <option value="Intérieur">Intérieur</option>
+    <option value="Extérieur">Exterieur</option>
+  </select>
+
+  <label for="purchase">Date d'achat</label>
+  <input type="date" formControlName="purchase" />
+
+  <fieldset>
+    <legend>Exposition</legend>
+    <div class="radio">
+      <input type="radio" formControlName="exposition" value="ombre" checked />
+      <label for="ombre">Ombre</label>
+    </div>
+    <div class="radio">
+      <input type="radio" formControlName="exposition" value="mi-ombre" />
+      <label for="mi-ombre">Mi-ombre</label>
+    </div>
+    <div class="radio">
+      <input type="radio" formControlName="exposition" value="soleil" />
+      <label for="soleil">soleil</label>
+    </div>
+  </fieldset>
+
+  <!-- <label for="exposition">Exposition</label>
+  <input type="radio" formControlName="exposition" /> -->
+
+  <label for="watering">Fréquence d'arrosage</label>
+  <input type="text" formControlName="watering" placeholder="1 fois par semaine"/>
+
+  <label for="price">Prix</label>
+  <input type="number" formControlName="price"/>
+
+  <button type="submit">Créer</button>
 </form>

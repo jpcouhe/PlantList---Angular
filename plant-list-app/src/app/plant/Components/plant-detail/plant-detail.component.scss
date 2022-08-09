@@ -1,11 +1,19 @@
 .plant-card {
-  margin: 10px;
-  width: 300px;
+  margin: 20px;
   height: 100%;
   position: relative;
-
-  img {
+  cursor: pointer;
+  border-radius: 5px;
+.image{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+img {
+  border-radius: 5px;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
   }
 
   &__info {

@@ -1,12 +1,12 @@
 <div class="plant-card" *ngIf="plant">
-  <div>
+  <div class="image">
     <img [src]="plant.imageUrl" alt="plant" />
   </div>
   <div class="plant-card__info">
     <h2>{{ plant.name }}</h2>
     <p>Exposition : {{ plant.exposition | plantExposition }}</p>
     <p>Fréquence d'arrosage : {{ plant.watering }}</p>
-    <p>Date d'achat : {{ plant.purchase }}</p>
+    <p>Date d'achat : {{ plant.purchase | date: 'dd/MM/yyyy'}}</p>
     <p>Prix : {{ plant.price }} €</p>
     <p>
       <span class="{{ plant.type | plantTypeColor }}"> {{ plant.type }}</span>
