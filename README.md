@@ -21,6 +21,8 @@ Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence
   - Récupération d'une Liste de plante (Pour le moment écrit en dur dans l'application) 
   - Création d'une nouvelle plante
   - Mise à jour de la liste 
+  
+  <a href='https://youtu.be/RUdAbk6bczE'><img src='plant-list-app/docs/youtube.png' height="50" width='auto'></br>
 
 ## 🏗️ Concepts utilisés
   - Programmation Réactive d'Angular (Observable et libraire RxJs)
@@ -30,6 +32,7 @@ Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence
 ## 🚀 Optimisations supplémentaires envisageables  
   - Gestion Utilisateur
   - Mise en Place d'une base de donnée externe via un service de type Firebase 
+  - Upload de ses images
   - Modification des Plantes
   - Mise en place du menu Burger 
   
