@@ -22,7 +22,7 @@ Création de fonctionnalités tenir à jour sa liste de plante (Type, fréquence
   - Création d'une nouvelle plante
   - Mise à jour de la liste 
   
-  <a href='https://youtu.be/RUdAbk6bczE'><img src='plant-list-app/docs/youtube.png' height="50" width='auto'></br>
+  <a href='https://youtu.be/RUdAbk6bczE'><img src='youtube.png' height="50" width='auto'></br>
 
 ## 🏗️ Concepts utilisés
   - Programmation Réactive d'Angular (Observable et libraire RxJs)
